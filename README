@@ -38,12 +38,36 @@ Till now, zmbkpose provides
 ################################################################################
 ################################################################################
 
-************For installation instructions please read the INSTALL file.
-
 
 #######################################################################
+# For installation instructions please read the INSTALL file.
+
 #######################################################################
+# About this rewrite job:
+ Zmbkpose is a great project.
+ After using it, I started to need some features that were not available and I 
+  wanted to add.
+
+ By analyzing the code, from my point of view, there is a big problem that 
+  requires a radical change in much of the code: Using a log file as metadata 
+  to access the backups, which means you must hold a synchronization between 
+  backup files, and archive logs. Differences between them would cause a big 
+  problem.
+
+ Use backup files directly, without additional metadata required so many 
+  changes in the code, I was more simple rewrite and incorporate other needs 
+  arising in my organization. Besides trying to make the code more efficient.
+
+ From my point of view rewriting code can be taken as offensive, and selfish. 
+ This was not my intention, and I do not want to step on the original code zmbkpose.
+
+ Zmbkpose programmers: If this code is offensive, please remove it.
+
+ Thanks for giving me a solution to my open source zimbra installation.
+
 #######################################################################
+# Usage:
+
 Index:
 
   01 - How zmbkpose obtains data for backups?
